@@ -1,5 +1,6 @@
 import React from 'react'
 import SingleFactComponent from './SingleFactComponent'
+import PropTypes from 'prop-types'
 
 function FactsListComponent(props) {
   return (
@@ -16,6 +17,14 @@ function FactsListComponent(props) {
       ))}
     </section>
   )
+}
+
+FactsListComponent.propTypes = {
+  facts: PropTypes.array.isRequired,
+  checked: PropTypes.array.isRequired,
+  setChecked: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
 }
 
 export default FactsListComponent

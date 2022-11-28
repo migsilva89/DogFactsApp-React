@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Textarea } from '@material-tailwind/react'
+import PropTypes from 'prop-types'
 
 function AddFact(props) {
   return (
@@ -37,6 +38,15 @@ function AddFact(props) {
       </form>
     </section>
   )
+}
+
+AddFact.propTypes = {
+  handleSubmit: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired,
+  setText: PropTypes.func.isRequired,
+  inputError: PropTypes.bool.isRequired,
+  setInputError: PropTypes.func.isRequired,
 }
 
 export default AddFact

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '@material-tailwind/react'
+import PropTypes from 'prop-types'
 
 function RemoveFactBtn(props) {
   return (
@@ -14,6 +15,12 @@ function RemoveFactBtn(props) {
       </Button>
     </div>
   )
+}
+
+RemoveFactBtn.propTypes = {
+  handleRemoveFact: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  checked: PropTypes.array.isRequired,
 }
 
 export default RemoveFactBtn

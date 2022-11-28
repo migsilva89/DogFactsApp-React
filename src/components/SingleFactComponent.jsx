@@ -1,5 +1,6 @@
 import React from 'react'
 import { Checkbox, Alert } from '@material-tailwind/react'
+import PropTypes from 'prop-types'
 
 function SingleFactComponent(props) {
   return (
@@ -15,6 +16,14 @@ function SingleFactComponent(props) {
       />
     </div>
   )
+}
+
+SingleFactComponent.propTypes = {
+  fact: PropTypes.string.isRequired,
+  checked: PropTypes.array.isRequired,
+  setChecked: PropTypes.func.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  index: PropTypes.number.isRequired,
 }
 
 export default SingleFactComponent

@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
     <header className="text-center mb-16 mx-6 ">
-      <div className='flex justify-center'>
+      <div className="flex justify-center">
         <img src="/Dog-icon.png" alt="" />
       </div>
       <h1 className="text-4xl text-blue-600">Dogs Facts App</h1>
