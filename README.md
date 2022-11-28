@@ -35,7 +35,7 @@ npm install
 npm run dev
 ```
 
-[Live Url here.](https://url-shortening-web-app.vercel.app/).
+[Live Url here.](dog-facts-app-react.vercel.app).
 
 Tips or advice on how to improve are very welcome, thank you all!
 
