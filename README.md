@@ -24,6 +24,10 @@ And users should be able to:
 ## Project Setup
 
 ```sh
+git clone https://github.com/migsilva89/DogFactsApp-React
+```
+
+```sh
 npm install 
 ```
 
