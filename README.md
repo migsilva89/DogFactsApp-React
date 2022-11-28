@@ -35,7 +35,7 @@ npm install
 npm run dev
 ```
 
-[Live Url here.](dog-facts-app-react.vercel.app).
+[Live Url here.](https://dog-facts-app-react.vercel.app/).
 
 Tips or advice on how to improve are very welcome, thank you all!
 
