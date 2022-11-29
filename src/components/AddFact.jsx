@@ -24,7 +24,9 @@ function AddFact(props) {
               Please recheck your fact...
             </div>
           ) : (
-            ''
+            <div className="text-blue-400 text-xs">
+            Please insert a fact with a least 30 characters.
+          </div>
           )}
           <Button
             disabled={props.isLoading}
