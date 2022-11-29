@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, Textarea } from '@material-tailwind/react'
 import PropTypes from 'prop-types'
+import Helper from './Helper'
 
 function AddFact(props) {
   return (
@@ -20,13 +21,9 @@ function AddFact(props) {
             disabled={props.isLoading}
           />
           {props.inputError ? (
-            <div className="text-red-400 text-xs">
-              Please recheck your fact...
-            </div>
+            <Error/>
           ) : (
-            <div className="text-blue-400 text-xs">
-            Please insert a fact with a least 30 characters.
-          </div>
+            <Helper/>
           )}
           <Button
             disabled={props.isLoading}
