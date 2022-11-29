@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, Textarea } from '@material-tailwind/react'
 import PropTypes from 'prop-types'
 import Helper from './Helper'
+import Error from './Error'
 
 function AddFact(props) {
   return (
