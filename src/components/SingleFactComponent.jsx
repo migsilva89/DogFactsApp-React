@@ -1,5 +1,5 @@
 import React from 'react'
-import { Checkbox, Alert } from '@material-tailwind/react'
+import { Alert } from '@material-tailwind/react'
 import PropTypes from 'prop-types'
 
 function SingleFactComponent(props) {
@@ -8,12 +8,16 @@ function SingleFactComponent(props) {
       <Alert>
         {props.index} - {props.fact}
       </Alert>
-      <Checkbox
-        color="red"
-        type="checkbox"
-        value={props.fact}
-        onChange={props.handleChange}
-      />
+      <div class="block">
+        <div class="mt-2 hover:bg-gray-200 rounded-full m-2 px-2">
+          <input
+            type="checkbox"
+            value={props.fact}
+            onChange={props.handleChange}
+            className="my-2"
+          />
+        </div>
+      </div>
     </div>
   )
 }
